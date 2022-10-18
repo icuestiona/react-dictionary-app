@@ -1,5 +1,12 @@
 .App-header {
   margin: 30px 0;
+  size: 60%;
+}
+
+.App-logo {
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
 }
 
 h1 {
