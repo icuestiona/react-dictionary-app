@@ -12,7 +12,7 @@ export default function Phonetic(props) {
     return (
       <span className="Phonetic phonetic-block">
         <span>
-          <i className="fa-solid fa-play" onClick={playAudio}>
+          <i class="fa-solid fa-play" onClick={playAudio}>
             {" "}
           </i>
         </span>
