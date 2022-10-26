@@ -1,3 +1,8 @@
+.App {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 .App-header {
   margin: 30px 0;
   size: 60%;
@@ -12,11 +17,12 @@
 body {
   background: linear-gradient(
     -45deg,
-    rgb(249, 206, 183) 4.6%,
-    rgb(234, 174, 202) 26%,
-    rgb(210, 182, 226) 49.1%,
-    rgb(173, 209, 242) 66.5%,
-    rgb(89, 244, 241) 86.5%
+    rgb(186, 73, 134) 4.6%,
+    rgb(132, 196, 228) 33%,
+    rgb(132, 44, 132) 49.1%,
+    rgb(100, 124, 164) 66.5%,
+    rgb(163, 168, 212) 86.5%,
+    rgb(33, 52, 55)
   );
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
