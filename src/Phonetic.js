@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import "./Phonetic.css";
 
 export default function Phonetic(props) {
@@ -11,10 +13,8 @@ export default function Phonetic(props) {
   if (props.phonetic.audio) {
     return (
       <span className="Phonetic phonetic-block">
-        <span>
-          <i class="fa-solid fa-play" onClick={playAudio}>
-            {" "}
-          </i>
+        <span className="sound">
+          <FontAwesomeIcon icon={faPlay} onClick={playAudio} />
         </span>
         <span className="text">{props.phonetic.text}</span>
       </span>
