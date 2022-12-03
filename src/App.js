@@ -17,7 +17,7 @@ function App() {
             <small>
               Coded by{" "}
               <a
-                href="https://stellar-donut-875afe.netlify.app/about.html"
+                href="https://www.linkedin.com/in/sorayacarvajal/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
