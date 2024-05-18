@@ -1,6 +1,7 @@
 {
   "name": "react-dictionary-app",
   "version": "0.1.0",
+  "homepage": "https://icuestiona.github.io/react-dictionary-app",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
