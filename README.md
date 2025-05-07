@@ -2,7 +2,7 @@
 
 A modern dictionary application that combines word definitions with visual representations by integrating with a dictionary API and the Pexels photo API.
 
-## Features
+#### Features
 
 * Word Definitions: Get comprehensive word meanings, parts of speech, and examples
 * Phonetics: Display phonetic spelling and pronunciation
@@ -11,7 +11,7 @@ A modern dictionary application that combines word definitions with visual repre
 * Responsive Design: Works on all device sizes
 * Interactive UI: Clean interface with intuitive controls
 
-## Technologies Used
+#### Technologies Used
 
 * React.js (v18.2.0) - Frontend framework
 * Axios (v1.1.3) - HTTP client for API requests
@@ -20,10 +20,9 @@ A modern dictionary application that combines word definitions with visual repre
 * Pexels API - For related word images
 * React Hooks - useState for state management
 
+#### API Integration
 
-## API Integration
-
-### Dictionary API
+##### Dictionary API
 * Fetches word definitions, phonetics, and pronunciation
 * Returns structured data including:
   * Definitions
@@ -31,10 +30,10 @@ A modern dictionary application that combines word definitions with visual repre
   * Phonetic text
   * Audio pronunciation
 
-### Pexels API
+#### Pexels API
 * Fetches high-quality images related to the searched word
 
-### Usage
+#### Usage
 * Enter a word in the search field
 * Press Enter or click the search button
 * View:
