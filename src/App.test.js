@@ -1,8 +1,21 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+beforeEach(() => {
+  global.fetch = jest.fn((url) =>
+    Promise.resolve({
+      json: () =>
+        Promise.resolve(
+          url.includes('dictionaryapi')
+            ? [{ word: 'shine', phonetics: [], meanings: [] }]
+            : { photos: [] }
+        ),
+    })
+  );
+});
+
+test('renders the dictionary app', async () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getByText(/what word do you want to look up/i)).toBeInTheDocument();
+  await waitFor(() => expect(screen.getByRole('heading', { name: 'shine' })).toBeInTheDocument());
 });

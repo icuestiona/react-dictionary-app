@@ -1,38 +1,37 @@
 import "./App.css";
 import Dictionary from "./Dictionary";
-import logo from "./logo.png";
 
 function App() {
   return (
     <div className="App">
       <div className="container">
         <header className="App-header">
-          <img src={logo} className="App-logo img-fluid" alt="logo" />
+          <div className="App-logo" aria-label="Dictionary app">
+            Dictionary
+          </div>
         </header>
         <main>
           <Dictionary defaultKeyword="shine" />
         </main>
         <footer className="text-center">
-          <footer>
-            <small>
-              Coded by{" "}
-              <a
-                href="https://www.linkedin.com/in/sorayacarvajal/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Soraya Carvajal
-              </a>{" "}
-              and is {""}
-              <a
-                href="https://github.com/icuestiona/react-dictionary-app"
-                target="_blank"
-                rel="noreferrer"
-              >
-                open-sourced on Github
-              </a>
-            </small>
-          </footer>
+          <small>
+            Coded by{" "}
+            <a
+              href="https://www.linkedin.com/in/sorayacarvajal/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Soraya Carvajal
+            </a>{" "}
+            and is {""}
+            <a
+              href="https://github.com/icuestiona/react-dictionary-app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              open-sourced on Github
+            </a>
+          </small>
         </footer>
       </div>
     </div>
