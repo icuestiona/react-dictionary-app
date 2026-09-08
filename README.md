@@ -1,6 +1,6 @@
 # React Dictionary App
 
-A modern dictionary application that combines word definitions with visual representations by integrating with a dictionary API and the Pexels photo API.
+A modern dictionary application that combines word definitions with visual representations by integrating with a dictionary API and the SheCodes Images API.
 
 ## Requirements
 
@@ -28,9 +28,9 @@ npm run build
 
 ## Deployment
 
-Netlify uses `npm run build` and publishes the `build` directory. Node.js 22 is
-configured in `netlify.toml`; pushing to the connected GitHub repository
-triggers a new deployment.
+Netlify uses `npm run build` and publishes the `build` directory. Node.js 22 and
+the root asset path (`PUBLIC_URL = "/"`) are configured in `netlify.toml`;
+pushing to the connected GitHub repository triggers a new deployment.
 
 The dictionary uses Dictionary API for definitions and the SheCodes Images API
 for related photos. API failures are handled independently so a problem with
@@ -41,7 +41,7 @@ one service does not prevent the other result from rendering.
 * Word Definitions: Get comprehensive word meanings, parts of speech, and examples
 * Phonetics: Display phonetic spelling and pronunciation
 * Audio Pronunciation: Play audio of word pronunciation
-* Visual Context: Show related images from Pexels API
+* Visual Context: Show related images from the SheCodes Images API
 * Responsive Design: Works on all device sizes
 * Interactive UI: Clean interface with intuitive controls
 
@@ -54,9 +54,9 @@ one service does not prevent the other result from rendering.
 * SheCodes Images API - For related word images
 * React Hooks - State and effect management
 
-#### API Integration
+## API Integration
 
-##### Dictionary API
+### Dictionary API
 * Fetches word definitions, phonetics, and pronunciation
 * Returns structured data including:
   * Definitions
@@ -64,7 +64,7 @@ one service does not prevent the other result from rendering.
   * Phonetic text
   * Audio pronunciation
 
-#### Pexels API
+### SheCodes Images API
 * Fetches high-quality images related to the searched word
 
 #### Usage
